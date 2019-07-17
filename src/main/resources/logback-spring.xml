@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <root level="debug"/>
     <logger name="com.eli" level="debug"/>
-    <!-- Spring Boot默认读取profile为default的profile，这里定义了日志级别为trace，因此会打印trace级别的日志。默认为debug。 -->
-    <springProfile name="default">
-        <logger name="com.eli" level="trace"/>
-    </springProfile>
+    <!--&lt;!&ndash; Spring Boot默认读取profile为default的profile，这里定义了日志级别为trace，因此会打印trace级别的日志。默认为debug。 &ndash;&gt;-->
+    <!--<springProfile name="default">-->
+        <!--<logger name="com.eli" level="trace"/>-->
+    <!--</springProfile>-->
 </configuration>
